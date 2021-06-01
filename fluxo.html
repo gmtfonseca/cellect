@@ -1,0 +1,6317 @@
+<html><head><title>Fluxo - 01/06/2021</title></head><body>
+
+
+  <meta charset="utf-8">    
+
+
+  <style>
+* {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 6px;
+  font-size: 13px;
+}
+
+th {
+  background-color: #606266;
+  color: white;
+}
+
+.projecoes-vencidas,
+.projecoes-agregadas {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.saldo,
+.projecoes-efetivadas {
+  margin-left: auto;
+}
+
+.saida {
+  color: #ff0000;
+}
+
+.entrada {
+  color: black;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.table-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.w-80 {
+  width: 80px;
+}
+
+.selected {
+  background: #75767a;
+  color: white;
+}
+
+#total {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px;
+  background: #606266;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+@media print {
+
+  tr,
+  td {
+    page-break-inside: avoid;
+  }
+}
+</style>
+
+<div>
+
+<div id="total">
+
+</div>
+<table class="projecoes-vencidas">
+  <tbody><tr>
+    <th colspan="4" class="table-title center-align uppercase">
+      Projeções vencidas
+    </th>
+  </tr>
+
+  <tr>
+    <th class="center-align w-80">Data</th>
+    <th>Descrição</th>
+    <th class="right-align w-80">Crédito</th>
+    <th class="right-align w-80">Débito</th>
+  </tr>
+
+  <tr>
+    <td class="center-align">13/04/2021</td>
+    <td>MEGA NF 4291/4</td>
+    <td class="right-align">
+      591,33
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+  <tr>
+    <td class="center-align">19/05/2021</td>
+    <td>MATHEUS LUCAS DE SOUZA MENDES 11807235629, NF 4525/1</td>
+    <td class="right-align">
+      464,39
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+  <tr>
+    <td class="center-align">27/05/2021</td>
+    <td>PRP BUSO COSMETICOS, NF 4609/1</td>
+    <td class="right-align">
+      2.718,00
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+  <tr>
+    <td class="center-align">28/05/2021</td>
+    <td>MONICA E MARCELO NF 4363/4</td>
+    <td class="right-align">
+      815,94
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+  <tr>
+    <td class="center-align">28/05/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+  <tr>
+    <td class="center-align">28/05/2021</td>
+    <td>TATIANA FIRMATO FORTES-ME, NF 4543/1</td>
+    <td class="right-align">
+      909,45
+    </td>
+    <td class="right-align ">
+    </td>
+  </tr>
+
+</tbody></table>
+
+<table class="saldo">
+  <tbody><tr>
+    <th colspan="4" class="table-title center-align uppercase">
+      Saldo
+    </th>
+  </tr>
+
+  <tr>
+    <th>Descrição</th>
+    <th class="right-align w-80">Total</th>
+    <th class="right-align w-80">Agregado</th>
+  </tr>
+  <tr>
+    <td class="uppercase">Caixa - Abril/2021</td>
+    <td class="right-align">75.065,61</td>
+    <td class="right-align">75.065,61</td>
+  </tr>
+  <tr>
+    <td class="uppercase">Lançamentos pós caixa</td>
+    <td class="right-align">-14.848,60</td>
+    <td class="right-align">60.217,01</td>
+  </tr>
+</tbody></table>
+
+<table class="projecoes-agregadas">
+  <tbody><tr>
+    <th colspan="5" class="table-title center-align uppercase">Projeções agregadas
+  </th></tr>
+  <tr>
+    <th class="center-align w-80">Data</th>
+    <th>Descrição</th>
+    <th class="right-align w-80">Crédito</th>
+    <th class="right-align w-80">Débito</th>
+    <th class="right-align w-80">Agregado</th>
+  </tr>
+
+  <tr>
+    <td class="center-align">29/05/2021</td>
+    <td>TREVO NF 4367/4</td>
+    <td class="right-align">
+      709,20
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.926,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>LEITURA AGUA RUBEN (MENS. FIM OBRA)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.926,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.926,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">60.426,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4536/</td>
+    <td class="right-align">
+      315,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.741,37</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>REGALARE NF 4444/3</td>
+    <td class="right-align">
+      499,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.240,37</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4530/</td>
+    <td class="right-align">
+      645,33
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.885,70</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.885,70</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>DON ALCIDES COMERCIO LTDA - ME, NF 4552/1</td>
+    <td class="right-align">
+      4.496,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.381,70</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4538/</td>
+    <td class="right-align">
+      186,77
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.568,47</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4545/</td>
+    <td class="right-align">
+      426,08
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.994,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4489/</td>
+    <td class="right-align">
+      148,62
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.143,17</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4492/</td>
+    <td class="right-align">
+      34,55
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.177,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4527/</td>
+    <td class="right-align">
+      71,86
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.249,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4491/1</td>
+    <td class="right-align">
+      265,12
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.514,70</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4504/</td>
+    <td class="right-align">
+      36,59
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.551,29</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4551/</td>
+    <td class="right-align">
+      527,07
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.078,36</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4508/</td>
+    <td class="right-align">
+      178,31
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.256,67</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4548/</td>
+    <td class="right-align">
+      114,43
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.371,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4496/</td>
+    <td class="right-align">
+      241,90
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.613,00</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4540/</td>
+    <td class="right-align">
+      88,04
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.701,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4539/</td>
+    <td class="right-align">
+      1.025,61
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">69.726,65</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4512/</td>
+    <td class="right-align">
+      288,66
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">70.015,31</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>LONDON ARTIGOS DE USO PESSOAL E DOMESTICO LTDA, NF 4515/2</td>
+    <td class="right-align">
+      3.308,64
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.323,95</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.323,95</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">72.923,95</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4522/</td>
+    <td class="right-align">
+      817,65
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.741,60</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4526/</td>
+    <td class="right-align">
+      83,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.825,08</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/05/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4518/</td>
+    <td class="right-align">
+      217,41
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">74.042,49</td>
+  </tr>
+  <tr>
+    <td class="center-align">02/06/2021</td>
+    <td>RAPIDO LABARCA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      115,42
+    </td>
+    <td class="right-align ">73.927,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/06/2021</td>
+    <td>AUGUSTA NF 4456/3</td>
+    <td class="right-align">
+      1.119,83
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.046,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/06/2021</td>
+    <td>EXPRESSO SAO MIGUEL</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      122,00
+    </td>
+    <td class="right-align ">74.924,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/06/2021</td>
+    <td>EXPRESSO SAO MIGUEL </td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      99,00
+    </td>
+    <td class="right-align ">74.825,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/06/2021</td>
+    <td>NINHO OBJETOS UNICOS E BABY LTDA, NF 4559/1</td>
+    <td class="right-align">
+      755,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.580,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/06/2021</td>
+    <td>ACRILSHOP INDUSTRIA E COMERCIO DE ACRILICOS LTDA, NF 3820/1</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      1.474,00
+    </td>
+    <td class="right-align ">74.106,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/06/2021</td>
+    <td>TATIANA FIRMATO NF 4381/4</td>
+    <td class="right-align">
+      1.128,81
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.235,73</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/06/2021</td>
+    <td>D ZEN PAPELARIA LTDA, NF 4560/1</td>
+    <td class="right-align">
+      782,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.018,05</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/06/2021</td>
+    <td>VLAROMA COM. NF 4383/4</td>
+    <td class="right-align">
+      689,40
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.707,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align ">58.707,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>POLLUX NF 4387/4</td>
+    <td class="right-align">
+      595,62
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">59.303,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>CASA DE CORA LTDA, NF 4563/1</td>
+    <td class="right-align">
+      1.497,38
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.800,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>EMPRESTIMO SICREDI 11/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align ">58.200,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>SCHMIDT DA SILVEIRA NF 4389/4</td>
+    <td class="right-align">
+      869,19
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">59.069,64</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>ROSA MARIA NF 4388/4</td>
+    <td class="right-align">
+      683,10
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">59.752,74</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4494/2</td>
+    <td class="right-align">
+      941,91
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.694,65</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/06/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4568/1</td>
+    <td class="right-align">
+      706,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.400,97</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/06/2021</td>
+    <td>TREVO COMERCIO DE PUBLICACOES E COMPLEME, NF 4499/2</td>
+    <td class="right-align">
+      908,33
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.309,30</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/06/2021</td>
+    <td>FERNANDO CANTOLINI SICHIERI - ME, NF 4500/2</td>
+    <td class="right-align">
+      1.426,52
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">63.735,82</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/06/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      226,62
+    </td>
+    <td class="right-align ">63.509,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/06/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">61.209,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/06/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">60.809,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">08/06/2021</td>
+    <td>BEM BRASIL NF 4462/3</td>
+    <td class="right-align">
+      564,12
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.373,32</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/06/2021</td>
+    <td>SAO SEBASTIAO DO RIO DE JANEIRO ADM. HOTELEIRA S.A, NF 4581/</td>
+    <td class="right-align">
+      2.417,79
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">63.791,11</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/06/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">63.721,11</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/06/2021</td>
+    <td>POMANDER NF 4393/4</td>
+    <td class="right-align">
+      696,15
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">64.417,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/06/2021</td>
+    <td>NETBARBAS NF 4466/3</td>
+    <td class="right-align">
+      1.873,70
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.290,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/06/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      145,21
+    </td>
+    <td class="right-align ">66.145,75</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align ">65.995,85</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>POLLUX COM E REPRESENTACOES LTDA, NF 4577/1</td>
+    <td class="right-align">
+      543,78
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.539,63</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align ">66.339,63</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>DECASA NF 4404/4</td>
+    <td class="right-align">
+      768,15
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.107,78</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align ">66.157,78</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">65.457,78</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>ATELIE CRAFT NF 4406/4</td>
+    <td class="right-align">
+      542,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">65.999,94</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/06/2021</td>
+    <td>PAINEIRAS CORCOVADO LTDA, NF 4578/1</td>
+    <td class="right-align">
+      6.056,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">72.055,94</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/06/2021</td>
+    <td>RAPIDO LABARCA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      233,33
+    </td>
+    <td class="right-align ">71.822,61</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/06/2021</td>
+    <td>VENICA OBJETOS LTDA, NF 4506/2</td>
+    <td class="right-align">
+      1.090,69
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">72.913,30</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/06/2021</td>
+    <td>REGALARE NF 4409/4</td>
+    <td class="right-align">
+      1.063,08
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.976,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/06/2021</td>
+    <td>VALDA FIGUEIREDO DECORACOES E PRESENTES EIRELI, NF 4583/1</td>
+    <td class="right-align">
+      554,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">74.530,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/06/2021</td>
+    <td>VENICA NF 4416/4</td>
+    <td class="right-align">
+      550,80
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.081,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/06/2021</td>
+    <td>DUCILIA COM. NF 4413/4</td>
+    <td class="right-align">
+      1.196,46
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.278,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/06/2021</td>
+    <td>REGINA STELA NF 4415/4</td>
+    <td class="right-align">
+      623,46
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.901,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/06/2021</td>
+    <td>PALACIO TANGARA DESENV. IMOB. E EXPL. HOTELEIRA LT, NF 4597/</td>
+    <td class="right-align">
+      490,50
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">77.392,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/06/2021</td>
+    <td>PRIMUS COMERCIO DE PRODUTOS DO LAR LTDA, NF 4514/2</td>
+    <td class="right-align">
+      616,05
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">78.008,23</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/06/2021</td>
+    <td>D ZEN PAPELARIA LTDA, NF 4513/2</td>
+    <td class="right-align">
+      685,73
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">78.693,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>INTERLINK NF 4417/4</td>
+    <td class="right-align">
+      577,98
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.271,94</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>LAURA GUATTA NF 4420/4</td>
+    <td class="right-align">
+      549,90
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.821,84</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>LONDON ARTIGOS DE USO PESSOAL E DOMESTICO LTDA, NF 4515/3</td>
+    <td class="right-align">
+      3.309,62
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.131,46</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>EMILIANO EMP. E PART. HOTELEIRAS SOC. LTDA, NF 4596/1</td>
+    <td class="right-align">
+      4.225,31
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">87.356,77</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">87.356,77</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">87.286,77</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/06/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">86.786,77</td>
+  </tr>
+  <tr>
+    <td class="center-align">16/06/2021</td>
+    <td>TREVO NF 4474/3</td>
+    <td class="right-align">
+      616,95
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">87.403,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/06/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">87.403,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/06/2021</td>
+    <td>KADOSH NF 4423/4</td>
+    <td class="right-align">
+      690,30
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">88.094,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/06/2021</td>
+    <td>LUMINARIUM NF 4477/3</td>
+    <td class="right-align">
+      929,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">89.023,60</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/06/2021</td>
+    <td>PAPELARIA BOUTIQUE DO PAPEL RJ LTDA, NF 4591/1</td>
+    <td class="right-align">
+      1.183,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">90.207,08</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/06/2021</td>
+    <td>AUGUSTA COMERCIO DE MOVEIS E DECORACOES, NF 4590/1</td>
+    <td class="right-align">
+      592,92
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">90.800,00</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/06/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align ">88.535,60</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/06/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 3/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align ">88.535,60</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/06/2021</td>
+    <td>RAQUEL MONTEIRO DE MIRANDA ME, NF 4516/2</td>
+    <td class="right-align">
+      1.210,95
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">89.746,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/06/2021</td>
+    <td>FERNANDO CANTOLINI SICHIERI - ME, NF 4593/1</td>
+    <td class="right-align">
+      1.069,89
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">90.816,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/06/2021</td>
+    <td>SANTELO PAPELARIA LTDA, NF 4520/2</td>
+    <td class="right-align">
+      1.078,63
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">91.895,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align ">81.895,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4529/2</td>
+    <td class="right-align">
+      1.412,69
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.307,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">81.007,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align ">72.007,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">71.307,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2021</td>
+    <td>EMPRESTIMO SICREDI 9/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align ">65.507,76</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/06/2021</td>
+    <td>REGALARE NF 4353/5</td>
+    <td class="right-align">
+      911,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">66.418,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/06/2021</td>
+    <td>CASALINDA NF 4482/3</td>
+    <td class="right-align">
+      1.263,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.682,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/06/2021</td>
+    <td>MC COM. DE CHAPAS ACRILICAS LTDA, NF 21460/1</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      1.017,50
+    </td>
+    <td class="right-align ">66.665,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">22/06/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4603/1</td>
+    <td class="right-align">
+      839,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.504,54</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>BDR RJ NF 4432/4</td>
+    <td class="right-align">
+      482,15
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">67.986,69</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>BDR PR NF 4430/4</td>
+    <td class="right-align">
+      520,76
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.507,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>BDR SC NF 4428/4</td>
+    <td class="right-align">
+      725,36
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">69.232,81</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>PROTETORES AURICULAR FUNCIONARIOS  (3 meses u )</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">69.232,81</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align ">68.932,81</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>JALECO OU CAMISETA FUNCIONARIOS (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">68.932,81</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/06/2021</td>
+    <td>BDR RS NF 4431/4</td>
+    <td class="right-align">
+      462,51
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">69.395,32</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/06/2021</td>
+    <td>ALBERTO ALVES CASTANHEIRA 10501570870, NF 4574/1</td>
+    <td class="right-align">
+      1.572,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">70.967,32</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/06/2021</td>
+    <td>BARBA DE RESPEITO SP NF 4429/4</td>
+    <td class="right-align">
+      2.078,99
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">73.046,31</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/06/2021</td>
+    <td>EMILIANO RJ EMP. E PART. HOTELEIRAS SOCIEDADE LTDA, NF 4531/</td>
+    <td class="right-align">
+      1.396,19
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">74.442,50</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/06/2021</td>
+    <td>TREVO COMERCIO DE PUBLICACOES E COMPLEME, NF 4533/2</td>
+    <td class="right-align">
+      825,52
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.268,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/06/2021</td>
+    <td>BDR MG NF 4433/4</td>
+    <td class="right-align">
+      489,06
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.757,08</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/06/2021</td>
+    <td>OCHIN NF4357/5</td>
+    <td class="right-align">
+      646,38
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.403,46</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/06/2021</td>
+    <td>ACRILSHOP INDUSTRIA E COMERCIO DE ACRILICOS LTDA, NF 3850/1</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      940,50
+    </td>
+    <td class="right-align ">75.462,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/06/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">74.762,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/06/2021</td>
+    <td>BALNEUM COM DE ACESS P/ BANHEIRO LTDA ME, NF 4535/2</td>
+    <td class="right-align">
+      596,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.359,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">26/06/2021</td>
+    <td>D ZEN NF 4359/5</td>
+    <td class="right-align">
+      521,66
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">75.881,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">26/06/2021</td>
+    <td>J.O.M COMERCIO DE COSMETICOS EIRELI - ME, NF 4608/1</td>
+    <td class="right-align">
+      1.726,18
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">77.607,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/06/2021</td>
+    <td>MONICA E MARCELO NF 4363/5</td>
+    <td class="right-align">
+      815,94
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">78.423,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/06/2021</td>
+    <td>TATIANA FIRMATO FORTES-ME, NF 4543/2</td>
+    <td class="right-align">
+      909,45
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.332,67</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/06/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.332,67</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/06/2021</td>
+    <td>TREVO NF 4367/5</td>
+    <td class="right-align">
+      709,20
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.041,87</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/06/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION (U)</td>
+    <td class="right-align">
+      4.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.041,87</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/06/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      8.000,00
+    </td>
+    <td class="right-align ">76.041,87</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4604/</td>
+    <td class="right-align">
+      259,40
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.301,27</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4595/1</td>
+    <td class="right-align">
+      36,70
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.337,97</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4599/1</td>
+    <td class="right-align">
+      140,10
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.478,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4594/</td>
+    <td class="right-align">
+      92,20
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.570,27</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4601/1</td>
+    <td class="right-align">
+      305,66
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.875,93</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4607/</td>
+    <td class="right-align">
+      100,05
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">76.975,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4606/1</td>
+    <td class="right-align">
+      233,90
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">77.209,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4605/1</td>
+    <td class="right-align">
+      118,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">77.328,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4600/1</td>
+    <td class="right-align">
+      69,82
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">77.397,86</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4598/</td>
+    <td class="right-align">
+      1.184,23
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">78.582,09</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4602/</td>
+    <td class="right-align">
+      339,45
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">78.921,54</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/06/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4544/1</td>
+    <td class="right-align">
+      623,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.544,56</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4558/1</td>
+    <td class="right-align">
+      289,56
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.834,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4611/1</td>
+    <td class="right-align">
+      160,59
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">79.994,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4610/</td>
+    <td class="right-align">
+      606,54
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.601,25</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4567/</td>
+    <td class="right-align">
+      74,36
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.675,61</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.675,61</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.675,61</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4565/1</td>
+    <td class="right-align">
+      1.824,63
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.500,24</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.500,24</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4562/1</td>
+    <td class="right-align">
+      127,47
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.627,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.627,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">82.227,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">81.727,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>MARCELINO PROVA DE VIDA BANCO DO BRASIL</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.727,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.727,71</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4561/</td>
+    <td class="right-align">
+      73,17
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.800,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4588/</td>
+    <td class="right-align">
+      176,56
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.977,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4557/</td>
+    <td class="right-align">
+      378,07
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.355,51</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4556/1</td>
+    <td class="right-align">
+      173,69
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.529,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4555/1</td>
+    <td class="right-align">
+      113,86
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.643,06</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4554/</td>
+    <td class="right-align">
+      602,85
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.245,91</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM POA COMERCIO DE ARTIGOS DE DECORACAO LTDA, NF 4569/1</td>
+    <td class="right-align">
+      437,60
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.683,51</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4575/</td>
+    <td class="right-align">
+      266,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.950,47</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4576/</td>
+    <td class="right-align">
+      308,15
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.258,62</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4582/</td>
+    <td class="right-align">
+      273,61
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.532,23</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4580/1</td>
+    <td class="right-align">
+      34,55
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.566,78</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4579/</td>
+    <td class="right-align">
+      202,15
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.768,93</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4585/</td>
+    <td class="right-align">
+      536,75
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">85.305,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4589/1</td>
+    <td class="right-align">
+      37,90
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">85.343,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>DOM COMERCIO DE DECORACAO E ACESSORIOS DE MODA EIR, NF 4584/</td>
+    <td class="right-align">
+      274,19
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">85.617,77</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2021</td>
+    <td>WILIAM DA SILVA COELHO EIRELI, NF 4586/1</td>
+    <td class="right-align">
+      136,25
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">85.754,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/07/2021</td>
+    <td>GALVANI COSMETICO E PERFUMARIA LTDA, NF 4587/1</td>
+    <td class="right-align">
+      1.170,23
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.924,25</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/07/2021</td>
+    <td>COMISSÕES MANUAIS/PMX, PATRÍCIA MARANHÃO - 06/2021</td>
+    <td class="right-align">
+      9.989,13
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">96.913,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">02/07/2021</td>
+    <td>SANTA JULIA NF 4375/5</td>
+    <td class="right-align">
+      533,88
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">97.447,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/07/2021</td>
+    <td>AUGUSTA NF 4456/4</td>
+    <td class="right-align">
+      1.119,81
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">98.567,07</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/07/2021</td>
+    <td>NINHO OBJETOS UNICOS E BABY LTDA, NF 4559/2</td>
+    <td class="right-align">
+      755,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">99.322,09</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/07/2021</td>
+    <td>D ZEN PAPELARIA LTDA, NF 4560/2</td>
+    <td class="right-align">
+      782,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">100.104,41</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>MC COM. DE CHAPAS ACRILICAS LTDA, NF 21460/2</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      1.017,50
+    </td>
+    <td class="right-align ">99.086,91</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>CASA DE CORA LTDA, NF 4563/2</td>
+    <td class="right-align">
+      1.497,38
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">100.584,29</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>EMPRESTIMO SICREDI 12/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align ">97.984,29</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>POLLUX NF 4387/5</td>
+    <td class="right-align">
+      595,62
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">98.579,91</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4494/3</td>
+    <td class="right-align">
+      942,18
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">99.522,09</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align ">81.522,09</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/07/2021</td>
+    <td>FERNANDO CANTOLINI SICHIERI - ME, NF 4500/3</td>
+    <td class="right-align">
+      1.426,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.949,05</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/07/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4570/1</td>
+    <td class="right-align">
+      142,28
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.091,33</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/07/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4568/2</td>
+    <td class="right-align">
+      706,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.797,65</td>
+  </tr>
+  <tr>
+    <td class="center-align">06/07/2021</td>
+    <td>TREVO COMERCIO DE PUBLICACOES E COMPLEME, NF 4499/3</td>
+    <td class="right-align">
+      908,33
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.705,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/07/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">82.405,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/07/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align ">82.205,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/07/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">81.805,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/07/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">81.735,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>ATELIE CRAFT NF 4406/5</td>
+    <td class="right-align">
+      542,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.278,14</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align ">82.161,14</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align ">81.211,14</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>POLLUX COM E REPRESENTACOES LTDA, NF 4577/2</td>
+    <td class="right-align">
+      543,78
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.754,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">81.054,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>ACRILSHOP INDUSTRIA E COMERCIO DE ACRILICOS LTDA, NF 3850/2</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      940,50
+    </td>
+    <td class="right-align ">80.114,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align ">79.964,52</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/07/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align ">79.764,52</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/07/2021</td>
+    <td>VENICA OBJETOS LTDA, NF 4506/3</td>
+    <td class="right-align">
+      1.091,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">80.855,54</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/07/2021</td>
+    <td>REGALARE NF 4409/5</td>
+    <td class="right-align">
+      1.063,08
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">81.918,62</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/07/2021</td>
+    <td>VALDA FIGUEIREDO DECORACOES E PRESENTES EIRELI, NF 4583/2</td>
+    <td class="right-align">
+      554,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">82.473,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/07/2021</td>
+    <td>VENICA NF 4416/5</td>
+    <td class="right-align">
+      550,80
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">83.024,00</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/07/2021</td>
+    <td>DUCILIA COM. NF 4413/5</td>
+    <td class="right-align">
+      1.196,46
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.220,46</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/07/2021</td>
+    <td>D ZEN PAPELARIA LTDA, NF 4513/3</td>
+    <td class="right-align">
+      685,94
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">84.906,40</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/07/2021</td>
+    <td>PRIMUS COMERCIO DE PRODUTOS DO LAR LTDA, NF 4514/3</td>
+    <td class="right-align">
+      616,05
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">85.522,45</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/07/2021</td>
+    <td>INTERLINK NF 4417/5</td>
+    <td class="right-align">
+      577,98
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.100,43</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/07/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">86.030,43</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/07/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.030,43</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/07/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">85.530,43</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/07/2021</td>
+    <td>LAURA GUATTA NF 4420/5</td>
+    <td class="right-align">
+      549,90
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.080,33</td>
+  </tr>
+  <tr>
+    <td class="center-align">16/07/2021</td>
+    <td>TREVO NF 4474/4</td>
+    <td class="right-align">
+      616,95
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.697,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/07/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">86.697,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/07/2021</td>
+    <td>AUGUSTA COMERCIO DE MOVEIS E DECORACOES, NF 4590/2</td>
+    <td class="right-align">
+      592,92
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">87.290,20</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/07/2021</td>
+    <td>PAPELARIA BOUTIQUE DO PAPEL RJ LTDA, NF 4591/2</td>
+    <td class="right-align">
+      1.183,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">88.473,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/07/2021</td>
+    <td>KADOSH NF 4423/5</td>
+    <td class="right-align">
+      690,30
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">89.163,98</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/07/2021</td>
+    <td>FERNANDO CANTOLINI SICHIERI - ME, NF 4593/2</td>
+    <td class="right-align">
+      1.069,89
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">90.233,87</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/07/2021</td>
+    <td>RAQUEL MONTEIRO DE MIRANDA ME, NF 4516/3</td>
+    <td class="right-align">
+      1.210,95
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">91.444,82</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/07/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 4/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align ">91.444,82</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/07/2021</td>
+    <td>SANTELO PAPELARIA LTDA, NF 4520/3</td>
+    <td class="right-align">
+      1.078,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">92.523,78</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/07/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align ">90.259,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align ">80.259,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">77.959,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">77.259,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align ">68.259,38</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>SIMPLES REF 03/21 1/2</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      4.249,34
+    </td>
+    <td class="right-align ">64.010,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4529/3</td>
+    <td class="right-align">
+      1.413,12
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">65.423,16</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2021</td>
+    <td>EMPRESTIMO SICREDI 10/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align ">59.623,16</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/07/2021</td>
+    <td>CASALINDA NF 4482/4</td>
+    <td class="right-align">
+      1.263,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">60.887,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">22/07/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4603/2</td>
+    <td class="right-align">
+      839,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.726,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/07/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align ">61.426,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/07/2021</td>
+    <td>TREVO COMERCIO DE PUBLICACOES E COMPLEME, NF 4533/3</td>
+    <td class="right-align">
+      825,76
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.252,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/07/2021</td>
+    <td>EMILIANO RJ EMP. E PART. HOTELEIRAS SOCIEDADE LTDA, NF 4531/</td>
+    <td class="right-align">
+      1.396,62
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">63.648,66</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/07/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">62.948,66</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/07/2021</td>
+    <td>BALNEUM COM DE ACESS P/ BANHEIRO LTDA ME, NF 4535/3</td>
+    <td class="right-align">
+      596,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">63.545,14</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/07/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">63.545,14</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/07/2021</td>
+    <td>TATIANA FIRMATO FORTES-ME, NF 4543/3</td>
+    <td class="right-align">
+      909,45
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">64.454,59</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/07/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      8.000,00
+    </td>
+    <td class="right-align ">56.454,59</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/07/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4544/2</td>
+    <td class="right-align">
+      623,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">57.077,61</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/07/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4547/1</td>
+    <td class="right-align">
+      129,60
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">57.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/07/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 1/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>PPRA QUALISAUDE (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.207,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">61.707,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">61.307,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.307,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">61.307,21</td>
+  </tr>
+  <tr>
+    <td class="center-align">02/08/2021</td>
+    <td>NINHO OBJETOS UNICOS E BABY LTDA, NF 4559/3</td>
+    <td class="right-align">
+      755,26
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.062,47</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/08/2021</td>
+    <td>D ZEN PAPELARIA LTDA, NF 4560/3</td>
+    <td class="right-align">
+      782,56
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">62.845,03</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/08/2021</td>
+    <td>CASA DE CORA LTDA, NF 4563/3</td>
+    <td class="right-align">
+      1.497,38
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">64.342,41</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align ">46.342,41</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2021</td>
+    <td>EMPRESTIMO SICREDI 13/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align ">43.742,41</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2021</td>
+    <td>TREVO COMERCIO DE PUBLICACOES E COMPLEME, NF 4499/4</td>
+    <td class="right-align">
+      908,31
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">44.650,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4568/3</td>
+    <td class="right-align">
+      706,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">45.357,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/08/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">43.057,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/08/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">42.657,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/08/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align ">42.457,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/08/2021</td>
+    <td>POLLUX COM E REPRESENTACOES LTDA, NF 4577/3</td>
+    <td class="right-align">
+      543,78
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">43.000,82</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/08/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">42.930,82</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/08/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align ">42.780,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/08/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align ">42.663,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/08/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">41.963,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/08/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align ">41.763,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/08/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align ">40.813,92</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/08/2021</td>
+    <td>VALDA FIGUEIREDO DECORACOES E PRESENTES EIRELI, NF 4583/3</td>
+    <td class="right-align">
+      554,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">41.368,50</td>
+  </tr>
+  <tr>
+    <td class="center-align">13/08/2021</td>
+    <td>PRIMUS COMERCIO DE PRODUTOS DO LAR LTDA, NF 4514/4</td>
+    <td class="right-align">
+      616,05
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">41.984,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/08/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align ">41.914,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/08/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">41.414,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/08/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">41.414,55</td>
+  </tr>
+  <tr>
+    <td class="center-align">16/08/2021</td>
+    <td>PAPELARIA BOUTIQUE DO PAPEL RJ LTDA, NF 4591/3</td>
+    <td class="right-align">
+      1.183,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">42.598,03</td>
+  </tr>
+  <tr>
+    <td class="center-align">16/08/2021</td>
+    <td>AUGUSTA COMERCIO DE MOVEIS E DECORACOES, NF 4590/3</td>
+    <td class="right-align">
+      592,92
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">43.190,95</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/08/2021</td>
+    <td>RAQUEL MONTEIRO DE MIRANDA ME, NF 4516/4</td>
+    <td class="right-align">
+      1.210,95
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">44.401,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/08/2021</td>
+    <td>FERNANDO CANTOLINI SICHIERI - ME, NF 4593/3</td>
+    <td class="right-align">
+      1.070,22
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">45.472,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/08/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">45.472,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/08/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 5/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align ">45.472,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/08/2021</td>
+    <td>ANIVERSARIO ELIESER</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">45.472,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/08/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align ">43.207,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>DOMINIO SITE DOM JOAN (2 ANOS, U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">43.207,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align ">40.907,72</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>CASALINDA NF 4482/5</td>
+    <td class="right-align">
+      1.263,96
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">42.171,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align ">32.171,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>EMPRESTIMO SICREDI 11/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align ">26.371,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">25.671,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align ">16.671,68</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2021</td>
+    <td>SIMPLES REF 03/21 2/2</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      4.249,33
+    </td>
+    <td class="right-align ">12.422,35</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/08/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4603/3</td>
+    <td class="right-align">
+      839,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">13.261,51</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/08/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align ">12.961,51</td>
+  </tr>
+  <tr>
+    <td class="center-align">24/08/2021</td>
+    <td>BALNEUM COM DE ACESS P/ BANHEIRO LTDA ME, NF 4535/4</td>
+    <td class="right-align">
+      596,46
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">13.557,97</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/08/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align ">12.857,97</td>
+  </tr>
+  <tr>
+    <td class="center-align">26/08/2021</td>
+    <td>TATIANA FIRMATO FORTES-ME, NF 4543/4</td>
+    <td class="right-align">
+      909,45
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">13.767,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/08/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">13.767,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/08/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4544/3</td>
+    <td class="right-align">
+      623,02
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">14.390,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/08/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 2/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">19.390,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/08/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      8.000,00
+    </td>
+    <td class="right-align ">11.390,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/08/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align ">10.990,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/08/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/08/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/08/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/08/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/08/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/08/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">10.490,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/09/2021</td>
+    <td>BAZZANELLA  1/4 2/2 NF 2471</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.500,00
+    </td>
+    <td class="right-align ">4.990,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/09/2021</td>
+    <td>CASA DE CORA LTDA, NF 4563/4</td>
+    <td class="right-align">
+      1.497,36
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">6.487,80</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/09/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4568/4</td>
+    <td class="right-align">
+      706,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align ">7.194,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/09/2021</td>
+    <td>EMPRESTIMO SICREDI 14/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align ">4.594,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/09/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align  saida ">-13.405,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/09/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-13.605,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/09/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-14.005,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/09/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-16.305,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">08/09/2021</td>
+    <td>ANIVERSARIO MARCELINO</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-16.305,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">08/09/2021</td>
+    <td>POLLUX COM E REPRESENTACOES LTDA, NF 4577/4</td>
+    <td class="right-align">
+      543,78
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-15.762,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/09/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-15.832,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-16.032,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-16.732,10</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align  saida ">-16.882,00</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>VALDA FIGUEIREDO DECORACOES E PRESENTES EIRELI, NF 4583/4</td>
+    <td class="right-align">
+      554,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-16.327,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align  saida ">-16.444,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/09/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align  saida ">-17.394,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">12/09/2021</td>
+    <td>TROCAR OLEO COMPRESSOR</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-17.394,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/09/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-17.394,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/09/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-17.464,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/09/2021</td>
+    <td>PAPELARIA BOUTIQUE DO PAPEL RJ LTDA, NF 4591/4</td>
+    <td class="right-align">
+      1.183,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-16.280,94</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/09/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-16.780,94</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/09/2021</td>
+    <td>AUGUSTA COMERCIO DE MOVEIS E DECORACOES, NF 4590/4</td>
+    <td class="right-align">
+      592,92
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-16.188,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/09/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-16.188,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/09/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 6/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-16.188,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/09/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align  saida ">-18.452,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align  saida ">-27.452,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align  saida ">-37.452,42</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4603/4</td>
+    <td class="right-align">
+      839,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-36.613,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>EMPRESTIMO SICREDI 12/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-42.413,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-43.113,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-45.413,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/09/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align  saida ">-45.713,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/09/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-46.413,26</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/09/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4544/4</td>
+    <td class="right-align">
+      623,04
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-45.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/09/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-45.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/09/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 3/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-40.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/09/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      8.000,00
+    </td>
+    <td class="right-align  saida ">-48.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-48.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-48.790,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-49.190,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-49.190,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-49.190,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-49.190,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-49.690,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/10/2021</td>
+    <td>BAZZANELLA  2/4</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.964,00
+    </td>
+    <td class="right-align  saida ">-55.654,22</td>
+  </tr>
+  <tr>
+    <td class="center-align">04/10/2021</td>
+    <td>REGALARE COMERCIO LTDA - ME, NF 4568/5</td>
+    <td class="right-align">
+      706,32
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-54.947,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/10/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align  saida ">-72.947,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/10/2021</td>
+    <td>EMPRESTIMO SICREDI 15/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-75.547,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/10/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-77.847,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/10/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-78.047,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/10/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-78.447,90</td>
+  </tr>
+  <tr>
+    <td class="center-align">08/10/2021</td>
+    <td>POLLUX COM E REPRESENTACOES LTDA, NF 4577/5</td>
+    <td class="right-align">
+      543,78
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-77.904,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/10/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-77.974,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align  saida ">-78.924,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-79.624,12</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align  saida ">-79.774,02</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>VALDA FIGUEIREDO DECORACOES E PRESENTES EIRELI, NF 4583/5</td>
+    <td class="right-align">
+      554,58
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-79.219,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-79.419,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/10/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align  saida ">-79.536,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/10/2021</td>
+    <td>PAPELARIA BOUTIQUE DO PAPEL RJ LTDA, NF 4591/5</td>
+    <td class="right-align">
+      1.183,48
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-78.352,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/10/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-78.852,96</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/10/2021</td>
+    <td>AUGUSTA COMERCIO DE MOVEIS E DECORACOES, NF 4590/5</td>
+    <td class="right-align">
+      592,92
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-78.260,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/10/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-78.260,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/10/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-78.330,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/10/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-78.330,04</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/10/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align  saida ">-80.594,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/10/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 7/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-80.594,44</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>CASALINDA MOVEIS E DECORACOES LTDA, NF 4603/5</td>
+    <td class="right-align">
+      839,16
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-79.755,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align  saida ">-89.755,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align  saida ">-98.755,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-101.055,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-101.755,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2021</td>
+    <td>EMPRESTIMO SICREDI 13/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-107.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/10/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align  saida ">-107.855,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/10/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-108.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/10/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-108.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/10/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 4/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-103.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/10/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      8.000,00
+    </td>
+    <td class="right-align  saida ">-111.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/10/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-111.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/10/2021</td>
+    <td>BOLETO PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-111.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">29/10/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-111.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/10/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-111.555,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/10/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-112.055,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/10/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-112.455,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">31/10/2021</td>
+    <td>BOLETOS PMX/DOM</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-112.455,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/11/2021</td>
+    <td>BAZZANELLA  3/4</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.963,00
+    </td>
+    <td class="right-align  saida ">-118.418,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/11/2021</td>
+    <td>INSPEÇÃO CALDEIRA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-118.418,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/11/2021</td>
+    <td>FOLHA DE PGTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align  saida ">-136.418,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/11/2021</td>
+    <td>EMPRESTIMO SICREDI 16/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-139.018,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/11/2021</td>
+    <td>ALMOÇOS BEIRA RIO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-139.418,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/11/2021</td>
+    <td>FARMACIA AGAFARMA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-139.618,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/11/2021</td>
+    <td>FGTS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-141.918,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/11/2021</td>
+    <td>TELEFONE  3564 1776</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-141.988,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>QUALISAUDE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align  saida ">-142.105,28</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>RENOVARE</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align  saida ">-142.255,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>PRESENTÃO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-142.455,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>WISTO</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align  saida ">-143.405,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>ANIVERSARIO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-143.405,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/11/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-144.105,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/11/2021</td>
+    <td>ANIVERSARIO ADRIANA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-144.105,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/11/2021</td>
+    <td>TALÃO DE CHEQUES BB SI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-144.105,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/11/2021</td>
+    <td>CDL DI</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-144.175,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/11/2021</td>
+    <td>LEITURA DE LUZ CEPARIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-144.175,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/11/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-144.675,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/11/2021</td>
+    <td>LEITURA LUZ PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-144.675,18</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/11/2021</td>
+    <td>UNIMED</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align  saida ">-146.939,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/11/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 8/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-146.939,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2021</td>
+    <td>IRF 561</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-147.639,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2021</td>
+    <td>SIMPLES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align  saida ">-157.639,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2021</td>
+    <td>VALES</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align  saida ">-166.639,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2021</td>
+    <td>EMPRESTIMO SICREDI 14/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-172.439,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2021</td>
+    <td>INSS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-174.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/11/2021</td>
+    <td>INSS RS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align  saida ">-175.039,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/11/2021</td>
+    <td>POSTO BRUDER</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-175.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/11/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-175.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/11/2021</td>
+    <td>ENERGIA ELETRICA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      4.100,00
+    </td>
+    <td class="right-align  saida ">-179.839,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/11/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 5/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-174.839,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2021</td>
+    <td>ECT CORREIOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-175.339,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-175.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2021</td>
+    <td>DECIMO TERCEIRO PRIMEIRA PARCELA (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      14.000,00
+    </td>
+    <td class="right-align  saida ">-189.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2021</td>
+    <td>LEITURA DE LUZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-189.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2021</td>
+    <td>RECIBO NARDI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-189.739,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/12/2021</td>
+    <td>BAZZANELLA  4/4</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.963,00
+    </td>
+    <td class="right-align  saida ">-195.702,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/12/2021</td>
+    <td>FOLHA DE PGTO (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      18.000,00
+    </td>
+    <td class="right-align  saida ">-213.702,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/12/2021</td>
+    <td>EMPRESTIMO SICREDI 17/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-216.302,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/12/2021</td>
+    <td>FGTS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-218.602,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/12/2021</td>
+    <td>ALMOÇOS BEIRA RIO (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-219.002,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">07/12/2021</td>
+    <td>FARMACIA AGAFARMA (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-219.202,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">09/12/2021</td>
+    <td>TELEFONE  3564 1776 (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-219.272,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>QUALISAUDE (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      117,00
+    </td>
+    <td class="right-align  saida ">-219.389,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>WISTO (13º) (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align  saida ">-220.339,58</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>RENOVARE (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      149,90
+    </td>
+    <td class="right-align  saida ">-220.489,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>POSTO BRUDER (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-221.189,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>PRESENTÃO (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      200,00
+    </td>
+    <td class="right-align  saida ">-221.389,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">10/12/2021</td>
+    <td>WISTO (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      950,00
+    </td>
+    <td class="right-align  saida ">-222.339,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/12/2021</td>
+    <td>CDL DI (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      70,00
+    </td>
+    <td class="right-align  saida ">-222.409,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/12/2021</td>
+    <td>TALÃO DE CHEQUES BB SI (Ú)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-222.409,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/12/2021</td>
+    <td>ECT CORREIOS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-222.909,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">16/12/2021</td>
+    <td>FÉRIAS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      15.000,00
+    </td>
+    <td class="right-align  saida ">-237.909,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/12/2021</td>
+    <td>IMPOSTO FUSCA E CORSA (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-237.909,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">17/12/2021</td>
+    <td>LEITURA LUZ PISCICULTURA (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-237.909,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/12/2021</td>
+    <td>DECIMO TERCEIRO SEGUNDA PARCELA (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      14.000,00
+    </td>
+    <td class="right-align  saida ">-251.909,48</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/12/2021</td>
+    <td>UNIMED (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.264,40
+    </td>
+    <td class="right-align  saida ">-254.173,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/12/2021</td>
+    <td>COMISSAO PATRICIA MARANHAO 9/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-254.173,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2021</td>
+    <td>INSS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.300,00
+    </td>
+    <td class="right-align  saida ">-256.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2021</td>
+    <td>IRF 561 (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-257.173,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2021</td>
+    <td>VALES (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      9.000,00
+    </td>
+    <td class="right-align  saida ">-266.173,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2021</td>
+    <td>EMPRESTIMO SICREDI 15/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-271.973,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2021</td>
+    <td>SIMPLES (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      10.000,00
+    </td>
+    <td class="right-align  saida ">-281.973,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">21/12/2021</td>
+    <td>INSS DECIMO TERCEIRO (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.500,00
+    </td>
+    <td class="right-align  saida ">-284.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">23/12/2021</td>
+    <td>INSS RS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      300,00
+    </td>
+    <td class="right-align  saida ">-284.773,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/12/2021</td>
+    <td>POSTO BRUDER (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      700,00
+    </td>
+    <td class="right-align  saida ">-285.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/12/2021</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-285.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/12/2021</td>
+    <td>ENERGIA ELETRICA (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      4.100,00
+    </td>
+    <td class="right-align  saida ">-289.573,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/12/2021</td>
+    <td>ENERGIA ELETRICA SOLUTION 6/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-284.573,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2021</td>
+    <td>LEITURA DE LUZ (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-284.573,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2021</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-284.973,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2021</td>
+    <td>ECT CORREIOS  (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      500,00
+    </td>
+    <td class="right-align  saida ">-285.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2021</td>
+    <td>RECIBO NARDI (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-285.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2021</td>
+    <td>LEITURA DE LUZ CEPARIA (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-285.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/01/2022</td>
+    <td>EMPRESTIMO SICREDI 18/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-288.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">08/01/2022</td>
+    <td>RESGATE OURO CAP 48 MESES</td>
+    <td class="right-align">
+      2.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-286.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/01/2022</td>
+    <td>COMISSAO PATRICIA MARANHAO 10/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-286.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">19/01/2022</td>
+    <td>ANIVER PATI/NINA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-286.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2022</td>
+    <td>EMPRESTIMO SICREDI 16/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-291.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/01/2022</td>
+    <td>ANIVER DAIANA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-291.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/01/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-291.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/01/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 7/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-286.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/01/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-287.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/01/2022</td>
+    <td>ANIVERSARIO ARI</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-287.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/02/2022</td>
+    <td>ANIVERSARIO LICERIO</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-287.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/02/2022</td>
+    <td>EMPRESTIMO SICREDI 19/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-289.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/02/2022</td>
+    <td>ANIVERSARIO MARCIA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-289.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/02/2022</td>
+    <td>COMISSAO PATRICIA MARANHAO 11/12</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-289.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2022</td>
+    <td>EMPRESTIMO SICREDI 17/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-295.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">25/02/2022</td>
+    <td>ANIVERSARIO CLEBERSON</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-295.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/02/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-295.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/02/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-296.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/02/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 8/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-291.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">03/03/2022</td>
+    <td>ANIVERSARIO GUSTAVO</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-291.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/03/2022</td>
+    <td>EMPRESTIMO SICREDI 20/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-293.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">14/03/2022</td>
+    <td>ANIVERSARIO JONATHAN</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-293.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">15/03/2022</td>
+    <td>DOMINIO SITE FONSECA ANUAL (u)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-293.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">18/03/2022</td>
+    <td>COMISSAO PATRICIA MARANHAO 12/12 (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-293.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2022</td>
+    <td>EMPRESTIMO SICREDI 18/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-299.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/03/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-299.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/03/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 9/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-294.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/03/2022</td>
+    <td>ANIVERSARIO LUCAS</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-294.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/03/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-294.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/04/2022</td>
+    <td>GS1 (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-294.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/04/2022</td>
+    <td>EMPRESTIMO SICREDI 21/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-297.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2022</td>
+    <td>EMPRESTIMO SICREDI 19/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-303.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/04/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-303.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/04/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 10/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-298.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/04/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-298.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/05/2022</td>
+    <td>EMPRESTIMO SICREDI 22/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-301.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">11/05/2022</td>
+    <td>TROCAR OLEO FUSCA/CORSA</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      0,00
+    </td>
+    <td class="right-align  saida ">-301.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2022</td>
+    <td>EMPRESTIMO SICREDI 20/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-307.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">27/05/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-307.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/05/2022</td>
+    <td>EMITIR NF TALÃO PISCICULTURA (U)</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-307.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/05/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 11/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-302.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/05/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-302.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2022</td>
+    <td>EMPRESTIMO SICREDI 23/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-305.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2022</td>
+    <td>EMPRESTIMO SICREDI 21/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-310.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">28/06/2022</td>
+    <td>ENERGIA ELETRICA SOLUTION 12/12</td>
+    <td class="right-align">
+      5.000,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-305.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/06/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-306.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2022</td>
+    <td>EMPRESTIMO SICREDI 24/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-308.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2022</td>
+    <td>EMPRESTIMO SICREDI 22/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-314.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/07/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-315.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">01/08/2022</td>
+    <td>SOLICITAR ALVARA BOMBEIROS C/ PANITZ</td>
+    <td class="right-align">
+      0,00
+    </td>
+    <td class="right-align ">
+    </td>
+    <td class="right-align  saida ">-315.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2022</td>
+    <td>EMPRESTIMO SICREDI 25/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-317.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2022</td>
+    <td>EMPRESTIMO SICREDI 23/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-323.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/08/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-323.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/09/2022</td>
+    <td>EMPRESTIMO SICREDI 26/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-326.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2022</td>
+    <td>EMPRESTIMO SICREDI 24/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-332.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/09/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-332.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/10/2022</td>
+    <td>EMPRESTIMO SICREDI 27/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-335.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2022</td>
+    <td>EMPRESTIMO SICREDI 25/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-341.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/10/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-341.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/11/2022</td>
+    <td>EMPRESTIMO SICREDI 28/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-344.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2022</td>
+    <td>EMPRESTIMO SICREDI 26/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-349.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/11/2022</td>
+    <td>MOINHO ALMOÇOS</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-350.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/12/2022</td>
+    <td>EMPRESTIMO SICREDI 29/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-352.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2022</td>
+    <td>EMPRESTIMO SICREDI 27/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-358.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">30/12/2022</td>
+    <td>MOINHO ALMOÇOS (U)</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      400,00
+    </td>
+    <td class="right-align  saida ">-359.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/01/2023</td>
+    <td>EMPRESTIMO SICREDI 30/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-361.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2023</td>
+    <td>EMPRESTIMO SICREDI 28/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-367.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/02/2023</td>
+    <td>EMPRESTIMO SICREDI 31/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-370.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2023</td>
+    <td>EMPRESTIMO SICREDI 29/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-375.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/03/2023</td>
+    <td>EMPRESTIMO SICREDI 32/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-378.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2023</td>
+    <td>EMPRESTIMO SICREDI 30/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-384.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/04/2023</td>
+    <td>EMPRESTIMO SICREDI 33/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-386.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2023</td>
+    <td>EMPRESTIMO SICREDI 31/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-392.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/05/2023</td>
+    <td>EMPRESTIMO SICREDI 34/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-395.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2023</td>
+    <td>EMPRESTIMO SICREDI 32/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-401.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2023</td>
+    <td>EMPRESTIMO SICREDI 35/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-403.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2023</td>
+    <td>EMPRESTIMO SICREDI 33/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-409.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2023</td>
+    <td>EMPRESTIMO SICREDI 36/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-412.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2023</td>
+    <td>EMPRESTIMO SICREDI 34/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-417.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/08/2023</td>
+    <td>EMPRESTIMO SICREDI 37/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-420.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2023</td>
+    <td>EMPRESTIMO SICREDI 35/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-426.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/09/2023</td>
+    <td>EMPRESTIMO SICREDI 38/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-428.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2023</td>
+    <td>EMPRESTIMO SICREDI 36/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-434.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/10/2023</td>
+    <td>EMPRESTIMO SICREDI 39/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-437.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2023</td>
+    <td>EMPRESTIMO SICREDI 37/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-443.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/11/2023</td>
+    <td>EMPRESTIMO SICREDI 40/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-445.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2023</td>
+    <td>EMPRESTIMO SICREDI 38/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-451.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/12/2023</td>
+    <td>EMPRESTIMO SICREDI 41/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-454.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2023</td>
+    <td>EMPRESTIMO SICREDI 39/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-459.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/01/2024</td>
+    <td>EMPRESTIMO SICREDI 42/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-462.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2024</td>
+    <td>EMPRESTIMO SICREDI 40/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-468.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/02/2024</td>
+    <td>EMPRESTIMO SICREDI 43/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-470.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2024</td>
+    <td>EMPRESTIMO SICREDI 41/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-476.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/03/2024</td>
+    <td>EMPRESTIMO SICREDI 44/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-479.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2024</td>
+    <td>EMPRESTIMO SICREDI 42/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-485.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/04/2024</td>
+    <td>EMPRESTIMO SICREDI 45/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-487.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2024</td>
+    <td>EMPRESTIMO SICREDI 43/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-493.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/05/2024</td>
+    <td>EMPRESTIMO SICREDI 46/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-496.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2024</td>
+    <td>EMPRESTIMO SICREDI 44/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-501.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/06/2024</td>
+    <td>EMPRESTIMO SICREDI 47/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-504.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2024</td>
+    <td>EMPRESTIMO SICREDI 45/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-510.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">05/07/2024</td>
+    <td>EMPRESTIMO SICREDI 48/48</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      2.600,00
+    </td>
+    <td class="right-align  saida ">-512.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2024</td>
+    <td>EMPRESTIMO SICREDI 46/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-518.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2024</td>
+    <td>EMPRESTIMO SICREDI 47/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-524.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2024</td>
+    <td>EMPRESTIMO SICREDI 48/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-530.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2024</td>
+    <td>EMPRESTIMO SICREDI 49/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-536.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2024</td>
+    <td>EMPRESTIMO SICREDI 50/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-541.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2024</td>
+    <td>EMPRESTIMO SICREDI 51/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-547.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2025</td>
+    <td>EMPRESTIMO SICREDI 52/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-553.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2025</td>
+    <td>EMPRESTIMO SICREDI 53/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-559.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2025</td>
+    <td>EMPRESTIMO SICREDI 54/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-565.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2025</td>
+    <td>EMPRESTIMO SICREDI 55/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-570.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2025</td>
+    <td>EMPRESTIMO SICREDI 56/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-576.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2025</td>
+    <td>EMPRESTIMO SICREDI 57/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-582.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2025</td>
+    <td>EMPRESTIMO SICREDI 58/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-588.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2025</td>
+    <td>EMPRESTIMO SICREDI 59/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-594.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2025</td>
+    <td>EMPRESTIMO SICREDI 60/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-599.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2025</td>
+    <td>EMPRESTIMO SICREDI 61/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-605.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2025</td>
+    <td>EMPRESTIMO SICREDI 62/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-611.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2025</td>
+    <td>EMPRESTIMO SICREDI 63/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-617.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2026</td>
+    <td>EMPRESTIMO SICREDI 64/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-623.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2026</td>
+    <td>EMPRESTIMO SICREDI 65/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-628.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2026</td>
+    <td>EMPRESTIMO SICREDI 66/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-634.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2026</td>
+    <td>EMPRESTIMO SICREDI 67/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-640.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2026</td>
+    <td>EMPRESTIMO SICREDI 68/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-646.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2026</td>
+    <td>EMPRESTIMO SICREDI 69/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-652.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2026</td>
+    <td>EMPRESTIMO SICREDI 70/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-657.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2026</td>
+    <td>EMPRESTIMO SICREDI 71/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-663.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2026</td>
+    <td>EMPRESTIMO SICREDI 72/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-669.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/10/2026</td>
+    <td>EMPRESTIMO SICREDI 73/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-675.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/11/2026</td>
+    <td>EMPRESTIMO SICREDI 74/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-681.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/12/2026</td>
+    <td>EMPRESTIMO SICREDI 75/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-686.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/01/2027</td>
+    <td>EMPRESTIMO SICREDI 76/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-692.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/02/2027</td>
+    <td>EMPRESTIMO SICREDI 77/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-698.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/03/2027</td>
+    <td>EMPRESTIMO SICREDI 78/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-704.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/04/2027</td>
+    <td>EMPRESTIMO SICREDI 79/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-710.073,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/05/2027</td>
+    <td>EMPRESTIMO SICREDI 80/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-715.873,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/06/2027</td>
+    <td>EMPRESTIMO SICREDI 81/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-721.673,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/07/2027</td>
+    <td>EMPRESTIMO SICREDI 82/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-727.473,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/08/2027</td>
+    <td>EMPRESTIMO SICREDI 83/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-733.273,88</td>
+  </tr>
+  <tr>
+    <td class="center-align">20/09/2027</td>
+    <td>EMPRESTIMO SICREDI 84/84</td>
+    <td class="right-align">
+    </td>
+    <td class="right-align  saida ">
+      5.800,00
+    </td>
+    <td class="right-align  saida ">-739.073,88</td>
+  </tr>
+
+</tbody></table>
+</div>
+
+
+<script>
+  var cells = document.querySelectorAll('td')
+  var totalElement = document.getElementById('total')
+  var selectKey = 17
+  var selectKeyDown = false
+  var selected = new Map()
+  var hoveredCell = null
+
+  window.onkeydown = function (e) {
+    if (e.keyCode === selectKey) {
+      selectKeyDown = true
+    }
+    updateCursor()
+  }
+
+  window.onkeyup = function (e) {
+    if (e.keyCode === selectKey) {
+      selectKeyDown = false
+    }
+    updateCursor()
+  }
+
+  window.onmouseover = function (e) {
+    hoveredCell = e.target
+    updateCursor()
+  }
+
+  cells.forEach((cell) => {
+    cell.addEventListener(
+      'click',
+      function () {
+        if (selectKeyDown) {
+          const row = cell.closest('tr').rowIndex - 1
+          const col = this.cellIndex
+          const cellIdx = `${row}:${col}`
+
+          console.log({ row, col })
+          const valueFormatted = this.innerText
+            .trim()
+            .replace(',', '@')
+            .replace('.', '')
+            .replace('@', '.')
+          const value = Number(valueFormatted)
+          console.log({ value })
+
+          if (!Number.isNaN(value)) {
+            if (selected.has(cellIdx)) {
+              selected.delete(cellIdx)
+            } else {
+              selected.set(cellIdx, value)
+            }
+            this.classList.toggle('selected')
+
+            const total = Array.from(selected.values()).reduce(
+              (prev, curr) => prev + curr,
+              0
+            )
+
+            totalElement.innerText = total
+            console.log({ total })
+          }
+        }
+      },
+      false
+    )
+  })
+
+  function updateCursor() {
+    if (hoveredCell.tagName === 'TD' && selectKeyDown) {
+      hoveredCell.style.cursor = 'pointer'
+    } else {
+      hoveredCell.style.cursor = 'default'
+    }
+  }
+</script>
+</body></html>
