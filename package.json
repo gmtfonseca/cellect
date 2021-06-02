@@ -5,7 +5,8 @@
   "main": "background-wrapper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist --copy-files"
+    "build": "babel src -d dist --source-maps inline --copy-files",
+    "watch": "babel --watch src -d dist --source-maps inline --copy-files"
   },
   "repository": {
     "type": "git",

@@ -1,28 +1,42 @@
-var cells = document.querySelectorAll('td')
-var totalElement
-var selectKey = 17 //91;
-var selectKeyDown = false
-var selected = new Map()
-var hoveredCell = null
+const KEY_STATE = {
+  Up: 0,
+  Down: 1,
+}
 
-fetch(chrome.runtime.getURL('/total.html'))
-  .then((r) => r.text())
-  .then((html) => {
-    document.body.insertAdjacentHTML('beforeend', html)
-    totalElement = document.getElementById('total')
-  })
+class Key {
+  constructor(code) {
+    this.code = code
+    this.state = KEY_STATE.Up
+  }
+
+  isDown() {
+    return this.state === KEY_STATE.Down
+  }
+}
+
+const sumKey = new Key(107)
+const minusKey = new Key(109)
+
+let hoveredCell, totalElement
+
+injectTotalHtml()
+
+function injectTotalHtml() {
+  fetch(chrome.runtime.getURL('/total.html'))
+    .then((res) => res.text())
+    .then((html) => {
+      document.body.insertAdjacentHTML('beforeend', html)
+      totalElement = document.getElementById('total')
+    })
+}
 
 window.onkeydown = function (e) {
-  if (e.keyCode === selectKey) {
-    selectKeyDown = true
-  }
+  updateKeyState(e.keyCode, KEY_STATE.Down)
   updateCursor()
 }
 
 window.onkeyup = function (e) {
-  if (e.keyCode === selectKey) {
-    selectKeyDown = false
-  }
+  updateKeyState(e.keyCode, KEY_STATE.Up)
   updateCursor()
 }
 
@@ -31,34 +45,56 @@ window.onmouseover = function (e) {
   updateCursor()
 }
 
-cells.forEach((cell) => {
+function updateKeyState(code, state) {
+  switch (code) {
+    case sumKey.code:
+      sumKey.state = state
+      break
+    case minusKey.code:
+      minusKey.state = state
+      break
+  }
+}
+
+function updateCursor() {
+  if (hoveredCell) {
+    if (
+      hoveredCell.tagName === 'TD' &&
+      (sumKey.isDown() || minusKey.isDown())
+    ) {
+      hoveredCell.style.cursor = 'pointer'
+    } else {
+      hoveredCell.style.cursor = 'default'
+    }
+  }
+}
+
+const selectedCells = new Map()
+const cells = document.querySelectorAll('td')
+cells.forEach((cell) =>
+console.log(cell);
   cell.addEventListener(
     'click',
     function () {
-      if (selectKeyDown) {
+      if (sumKey.isDown() || minusKey.isDown()) {
         const row = cell.closest('tr').rowIndex - 1
-        const col = this.cellIndex
+        const col = cell.cellIndex
         const cellIdx = `${row}:${col}`
 
-        const valueFormatted = this.innerText
-          .trim()
-          .replace(',', '@')
-          .replace('.', '')
-          .replace('@', '.')
-
-        const value = Number(valueFormatted)
+        const value = parseNumber(cell.innerText)
 
         if (!Number.isNaN(value)) {
-          if (selected.has(cellIdx)) {
-            selected.delete(cellIdx)
+          if (selectedCells.has(cellIdx)) {
+            selectedCells.delete(cellIdx)
           } else {
-            selected.set(cellIdx, value)
+            const signedValue = sumKey.isDown() ? value : -value
+            selectedCells.set(cellIdx, signedValue)
           }
 
-          this.classList.toggle('selected')
+          cell.classList.toggle('selected')
 
           const total =
-            Array.from(selected.values()).reduce(
+            Array.from(selectedCells.values()).reduce(
               (prev, curr) => prev + curr * 100,
               0
             ) / 100
@@ -69,7 +105,7 @@ cells.forEach((cell) => {
             totalElement.style.display = 'block'
           }
 
-          totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
+          const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
           totalElement.innerText = totalFormatted
         }
       } else {
@@ -79,12 +115,14 @@ cells.forEach((cell) => {
     },
     false
   )
-})
+)
 
-function updateCursor() {
-  if (hoveredCell.tagName === 'TD' && selectKeyDown) {
-    hoveredCell.style.cursor = 'pointer'
-  } else {
-    hoveredCell.style.cursor = 'default'
-  }
+function parseNumber(str) {
+  const brazilianStrNum = str
+    .trim()
+    .replace(',', '@')
+    .replace('.', '')
+    .replace('@', '.')
+
+  return Number(brazilianStrNum)
 }
