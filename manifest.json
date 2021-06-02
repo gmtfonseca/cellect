@@ -3,12 +3,33 @@
   "description": "Select columns like excel",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "css": ["select.css"],
-      "js": ["select.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "select.css"
+      ],
+      "js": [
+        "select.js"
+      ],
+      "match_about_blank": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "total.html"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "extension_ids": []
     }
   ]
 }

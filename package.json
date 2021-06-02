@@ -1,0 +1,23 @@
+{
+  "name": "fonseca-sheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "background-wrapper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmtfonseca/fonseca-sheet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmtfonseca/fonseca-sheet/issues"
+  },
+  "homepage": "https://github.com/gmtfonseca/fonseca-sheet#readme",
+  "devDependencies": {
+    "@types/chrome": "0.0.144"
+  }
+}
