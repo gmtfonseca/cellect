@@ -14,7 +14,7 @@ class Key {
   }
 }
 
-const sumKey = new Key(107)
+const plusKey = new Key(107)
 const minusKey = new Key(109)
 
 let hoveredCell, totalElement
@@ -47,8 +47,8 @@ window.onmouseover = function (e) {
 
 function updateKeyState(code, state) {
   switch (code) {
-    case sumKey.code:
-      sumKey.state = state
+    case plusKey.code:
+      plusKey.state = state
       break
     case minusKey.code:
       minusKey.state = state
@@ -60,7 +60,7 @@ function updateCursor() {
   if (hoveredCell) {
     if (
       hoveredCell.tagName === 'TD' &&
-      (sumKey.isDown() || minusKey.isDown())
+      (plusKey.isDown() || minusKey.isDown())
     ) {
       hoveredCell.style.cursor = 'pointer'
     } else {
@@ -72,50 +72,61 @@ function updateCursor() {
 const selectedCells = new Map()
 const cells = document.querySelectorAll('td')
 cells.forEach((cell) =>
-console.log(cell);
-  cell.addEventListener(
-    'click',
-    function () {
-      if (sumKey.isDown() || minusKey.isDown()) {
-        const row = cell.closest('tr').rowIndex - 1
-        const col = cell.cellIndex
-        const cellIdx = `${row}:${col}`
-
-        const value = parseNumber(cell.innerText)
-
-        if (!Number.isNaN(value)) {
-          if (selectedCells.has(cellIdx)) {
-            selectedCells.delete(cellIdx)
-          } else {
-            const signedValue = sumKey.isDown() ? value : -value
-            selectedCells.set(cellIdx, signedValue)
-          }
-
-          cell.classList.toggle('selected')
-
-          const total =
-            Array.from(selectedCells.values()).reduce(
-              (prev, curr) => prev + curr * 100,
-              0
-            ) / 100
-
-          if (total === 0) {
-            totalElement.style.display = 'none'
-          } else {
-            totalElement.style.display = 'block'
-          }
-
-          const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
-          totalElement.innerText = totalFormatted
-        }
-      } else {
-        totalElement.innerText = ''
-        totalElement.style.display = 'none'
-      }
-    },
-    false
-  )
+  cell.addEventListener('click', handleCellClick.bind(this, cell), false)
 )
+
+function handleCellClick(cell) {
+  if (plusKey.isDown() || minusKey.isDown()) {
+    const row = cell.closest('tr').rowIndex - 1
+    const col = cell.cellIndex
+    const cellIdx = `${row}:${col}`
+
+    const value = parseNumber(cell.innerText)
+
+    if (!Number.isNaN(value)) {
+      if (selectedCells.has(cellIdx)) {
+        if (plusKey.isDown()) {
+          cell.classList.remove('plus-bg')
+        } else {
+          cell.classList.remove('minus-bg')
+        }
+
+        selectedCells.delete(cellIdx)
+      } else {
+        let signedValue
+        if (plusKey.isDown()) {
+          signedValue = value
+          cell.classList.remove('minus-bg')
+          cell.classList.add('plus-bg')
+        } else {
+          signedValue = -value
+          cell.classList.remove('plus-bg')
+          cell.classList.add('minus-bg')
+        }
+
+        selectedCells.set(cellIdx, signedValue)
+      }
+
+      const total =
+        Array.from(selectedCells.values()).reduce(
+          (prev, curr) => prev + curr * 100,
+          0
+        ) / 100
+
+      if (total === 0) {
+        totalElement.style.display = 'none'
+      } else {
+        totalElement.style.display = 'block'
+      }
+
+      const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
+      totalElement.innerText = totalFormatted
+    }
+  } else {
+    totalElement.innerText = ''
+    totalElement.style.display = 'none'
+  }
+}
 
 function parseNumber(str) {
   const brazilianStrNum = str
