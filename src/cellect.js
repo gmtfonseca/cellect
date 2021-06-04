@@ -14,26 +14,35 @@ class Key {
   }
 }
 
-const os = navigator.userAgent.indexOf('Win') != -1 ? 'Win' : 'Other'
+injectTotalHtml()
 
+const os = navigator.userAgent.indexOf('Win') != -1 ? 'Win' : 'Other'
 const plusKeyCode = os === 'Win' ? 107 : 81
 const minusKeyCode = os === 'Win' ? 109 : 87
 
 const plusKey = new Key(plusKeyCode)
 const minusKey = new Key(minusKeyCode)
 
+const selectedCells = new Map()
+
 let hoveredCell, totalElement
 
-injectTotalHtml()
+document.body.addEventListener(
+  'click',
+  (event) => {
+    if (!plusKey.isDown() && !minusKey.isDown()) {
+      clearCellSelection()
+      event.stopPropagation()
+    }
+  },
+  true
+)
 
-function injectTotalHtml() {
-  fetch(chrome.runtime.getURL('/total.html'))
-    .then((res) => res.text())
-    .then((html) => {
-      document.body.insertAdjacentHTML('beforeend', html)
-      totalElement = document.getElementById('total')
-    })
-}
+document
+  .querySelectorAll('td')
+  .forEach((cell) =>
+    cell.addEventListener('click', handleCellClick.bind(this, cell), true)
+  )
 
 window.onkeydown = function (e) {
   updateKeyState(e.keyCode, KEY_STATE.Down)
@@ -48,6 +57,15 @@ window.onkeyup = function (e) {
 window.onmouseover = function (e) {
   hoveredCell = e.target
   updateCursor()
+}
+
+function injectTotalHtml() {
+  fetch(chrome.runtime.getURL('/total.html'))
+    .then((res) => res.text())
+    .then((html) => {
+      document.body.insertAdjacentHTML('beforeend', html)
+      totalElement = document.getElementById('total')
+    })
 }
 
 function updateKeyState(code, state) {
@@ -73,12 +91,6 @@ function updateCursor() {
     }
   }
 }
-
-const selectedCells = new Map()
-const cells = document.querySelectorAll('td')
-cells.forEach((cell) =>
-  cell.addEventListener('click', handleCellClick.bind(this, cell), false)
-)
 
 function handleCellClick(cell) {
   if (plusKey.isDown() || minusKey.isDown()) {
@@ -133,14 +145,6 @@ function handleCellClick(cell) {
       const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
       totalElement.innerText = totalFormatted
     }
-  } else {
-    Array.from(selectedCells.values()).forEach((cell) => {
-      cell.element.classList.remove('plus-bg')
-      cell.element.classList.remove('minus-bg')
-    })
-    selectedCells.clear()
-    totalElement.innerText = null
-    totalElement.style.display = 'none'
   }
 }
 
@@ -152,4 +156,14 @@ function parseNumber(str) {
     .replace('@', '.')
 
   return Number(brazilianStrNum)
+}
+
+function clearCellSelection() {
+  Array.from(selectedCells.values()).forEach((cell) => {
+    cell.element.classList.remove('plus-bg')
+    cell.element.classList.remove('minus-bg')
+  })
+  selectedCells.clear()
+  totalElement.innerText = null
+  totalElement.style.display = 'none'
 }
