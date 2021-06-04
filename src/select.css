@@ -1,9 +1,9 @@
 .plus-bg {
-  background: blue;
+  background: rgb(76, 182, 76);
   color: white !important;
 }
 
 .minus-bg {
-  background: red;
+  background: rgb(221, 102, 102);
   color: white !important;
 }

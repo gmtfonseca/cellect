@@ -14,8 +14,13 @@ class Key {
   }
 }
 
-const plusKey = new Key(107)
-const minusKey = new Key(109)
+const os = navigator.userAgent.indexOf('Win') != -1 ? 'Win' : 'Other'
+
+const plusKeyCode = os === 'Win' ? 107 : 81
+const minusKeyCode = os === 'Win' ? 109 : 87
+
+const plusKey = new Key(plusKeyCode)
+const minusKey = new Key(minusKeyCode)
 
 let hoveredCell, totalElement
 
@@ -80,36 +85,42 @@ function handleCellClick(cell) {
     const row = cell.closest('tr').rowIndex - 1
     const col = cell.cellIndex
     const cellIdx = `${row}:${col}`
-
     const value = parseNumber(cell.innerText)
 
     if (!Number.isNaN(value)) {
       if (selectedCells.has(cellIdx)) {
-        if (plusKey.isDown()) {
+        if (cell.classList.contains('plus-bg') && plusKey.isDown()) {
+          selectedCells.delete(cellIdx)
           cell.classList.remove('plus-bg')
+        } else if (cell.classList.contains('minus-bg') && minusKey.isDown()) {
+          selectedCells.delete(cellIdx)
+          cell.classList.remove('minus-bg')
         } else {
-          cell.classList.remove('minus-bg')
-        }
+          const signedValue = plusKey.isDown() ? value : -value
+          selectedCells.set(cellIdx, { element: cell, value: signedValue })
 
-        selectedCells.delete(cellIdx)
+          if (plusKey.isDown()) {
+            cell.classList.remove('minus-bg')
+            cell.classList.add('plus-bg')
+          } else {
+            cell.classList.remove('plus-bg')
+            cell.classList.add('minus-bg')
+          }
+        }
       } else {
-        let signedValue
+        const signedValue = plusKey.isDown() ? value : -value
+        selectedCells.set(cellIdx, { element: cell, value: signedValue })
+
         if (plusKey.isDown()) {
-          signedValue = value
-          cell.classList.remove('minus-bg')
           cell.classList.add('plus-bg')
         } else {
-          signedValue = -value
-          cell.classList.remove('plus-bg')
           cell.classList.add('minus-bg')
         }
-
-        selectedCells.set(cellIdx, signedValue)
       }
 
       const total =
         Array.from(selectedCells.values()).reduce(
-          (prev, curr) => prev + curr * 100,
+          (prev, curr) => prev + curr.value * 100,
           0
         ) / 100
 
@@ -123,7 +134,12 @@ function handleCellClick(cell) {
       totalElement.innerText = totalFormatted
     }
   } else {
-    totalElement.innerText = ''
+    Array.from(selectedCells.values()).forEach((cell) => {
+      cell.element.classList.remove('plus-bg')
+      cell.element.classList.remove('minus-bg')
+    })
+    selectedCells.clear()
+    totalElement.innerText = null
     totalElement.style.display = 'none'
   }
 }
