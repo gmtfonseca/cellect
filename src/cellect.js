@@ -14,18 +14,17 @@ class Key {
   }
 }
 
-injectTotalHtml()
-
 const os = navigator.userAgent.indexOf('Win') != -1 ? 'Win' : 'Other'
 const plusKeyCode = os === 'Win' ? 107 : 81
 const minusKeyCode = os === 'Win' ? 109 : 87
-
 const plusKey = new Key(plusKeyCode)
 const minusKey = new Key(minusKeyCode)
 
 const selectedCells = new Map()
 
 let hoveredCell, totalElement
+
+injectTotalHtml()
 
 document.body.addEventListener(
   'click',
@@ -40,9 +39,7 @@ document.body.addEventListener(
 
 document
   .querySelectorAll('td')
-  .forEach((cell) =>
-    cell.addEventListener('click', handleCellClick.bind(this, cell), true)
-  )
+  .forEach((cell) => cell.addEventListener('click', handleCellClick, true))
 
 window.onkeydown = function (e) {
   updateKeyState(e.keyCode, KEY_STATE.Down)
@@ -92,24 +89,26 @@ function updateCursor() {
   }
 }
 
-function handleCellClick(cell) {
+function handleCellClick(event) {
+  const cell = event.target
   if (plusKey.isDown() || minusKey.isDown()) {
+    const tableClass = cell.parentNode?.parentNode?.parentNode?.classList[0]
     const row = cell.closest('tr').rowIndex - 1
     const col = cell.cellIndex
-    const cellIdx = `${row}:${col}`
+    const cellKey = `${tableClass}:${row}:${col}`
     const value = parseNumber(cell.innerText)
 
     if (!Number.isNaN(value)) {
-      if (selectedCells.has(cellIdx)) {
+      if (selectedCells.has(cellKey)) {
         if (cell.classList.contains('plus-bg') && plusKey.isDown()) {
-          selectedCells.delete(cellIdx)
+          selectedCells.delete(cellKey)
           cell.classList.remove('plus-bg')
         } else if (cell.classList.contains('minus-bg') && minusKey.isDown()) {
-          selectedCells.delete(cellIdx)
+          selectedCells.delete(cellKey)
           cell.classList.remove('minus-bg')
         } else {
           const signedValue = plusKey.isDown() ? value : -value
-          selectedCells.set(cellIdx, { element: cell, value: signedValue })
+          selectedCells.set(cellKey, { element: cell, value: signedValue })
 
           if (plusKey.isDown()) {
             cell.classList.remove('minus-bg')
@@ -121,7 +120,7 @@ function handleCellClick(cell) {
         }
       } else {
         const signedValue = plusKey.isDown() ? value : -value
-        selectedCells.set(cellIdx, { element: cell, value: signedValue })
+        selectedCells.set(cellKey, { element: cell, value: signedValue })
 
         if (plusKey.isDown()) {
           cell.classList.add('plus-bg')

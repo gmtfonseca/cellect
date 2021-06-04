@@ -1,1 +1,1 @@
-Any click on page without proper keys should trigger clear
+Different tables glitch
