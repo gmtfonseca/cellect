@@ -1,14 +1,15 @@
-# Usage
+# Cellect
 
-Aggregate any cell in a table
+Aggregate any cell of an HTML table
 
-## Windows
+## Usage
 
-- \- for Plus
+### Windows
 
-- \+ for Minus
+- Press <kbd>+</kbd> and click on a cell to **sum**
+- Press <kbd>-</kbd> and click on a cell to **subract**
 
-## Mac
+### Other
 
-- Q for Plus
-- W for Minus
+- Press <kbd>Q</kbd> and click on a cell to **sum**
+- Press <kbd>W</kbd> and click on a cell to **subract**

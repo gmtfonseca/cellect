@@ -1,6 +1,6 @@
 {
-  "name": "Table Sheet",
-  "description": "Select columns like excel",
+  "name": "Cellect",
+  "description": "Select and aggregate cells",
   "version": "1.0",
   "manifest_version": 3,
   "permissions": [
@@ -13,10 +13,10 @@
         "<all_urls>"
       ],
       "css": [
-        "select.css"
+        "cellect.css"
       ],
       "js": [
-        "select.js"
+        "cellect.js"
       ],
       "match_about_blank": true
     }
