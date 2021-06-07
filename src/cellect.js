@@ -76,14 +76,15 @@ function updateKeyState(code, state) {
 }
 
 function updateCursor() {
-  if (
-    (plusKey.isDown() || minusKey.isDown()) &&
-    hoveredElement &&
-    hoveredElement.tagName === 'TD'
-  ) {
-    hoveredElement.classList.add('hovered-cell')
-  } else {
-    hoveredElement.classList.remove('hovered-cell')
+  if (hoveredElement) {
+    if (
+      (plusKey.isDown() || minusKey.isDown()) &&
+      hoveredElement.tagName === 'TD'
+    ) {
+      hoveredElement.classList.add('hovered-cell')
+    } else {
+      hoveredElement.classList.remove('hovered-cell')
+    }
   }
 }
 
