@@ -22,16 +22,15 @@ const minusKey = new Key(minusKeyCode)
 
 const selectedCells = new Map()
 
-let hoveredCell, totalElement
+let hoveredElement, totalElement
 
 injectTotalHtml()
 
 document.body.addEventListener(
   'click',
-  (event) => {
+  () => {
     if (!plusKey.isDown() && !minusKey.isDown()) {
       clearCellSelection()
-      event.stopPropagation()
     }
   },
   true
@@ -52,7 +51,7 @@ window.onkeyup = function (e) {
 }
 
 window.onmouseover = function (e) {
-  hoveredCell = e.target
+  hoveredElement = e.target
   updateCursor()
 }
 
@@ -77,15 +76,14 @@ function updateKeyState(code, state) {
 }
 
 function updateCursor() {
-  if (hoveredCell) {
-    if (
-      hoveredCell.tagName === 'TD' &&
-      (plusKey.isDown() || minusKey.isDown())
-    ) {
-      hoveredCell.style.cursor = 'pointer'
-    } else {
-      hoveredCell.style.cursor = 'default'
-    }
+  if (
+    (plusKey.isDown() || minusKey.isDown()) &&
+    hoveredElement &&
+    hoveredElement.tagName === 'TD'
+  ) {
+    hoveredElement.classList.add('hovered-cell')
+  } else {
+    hoveredElement.classList.remove('hovered-cell')
   }
 }
 

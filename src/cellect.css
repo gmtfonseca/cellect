@@ -7,3 +7,7 @@
   background: rgb(221, 102, 102);
   color: white !important;
 }
+
+.hovered-cell {
+  cursor: pointer;
+}
