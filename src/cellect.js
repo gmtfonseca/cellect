@@ -90,60 +90,9 @@ function updateCursor() {
 }
 
 function handleCellClick(event) {
-  const cell = event.target
   if (plusKey.isDown() || minusKey.isDown()) {
-    const tableClass = cell.parentNode?.parentNode?.parentNode?.classList[0]
-    const row = cell.closest('tr').rowIndex - 1
-    const col = cell.cellIndex
-    const cellKey = `${tableClass}:${row}:${col}`
-    const value = parseNumber(cell.innerText)
-
-    if (!Number.isNaN(value)) {
-      if (selectedCells.has(cellKey)) {
-        if (cell.classList.contains('plus-bg') && plusKey.isDown()) {
-          selectedCells.delete(cellKey)
-          cell.classList.remove('plus-bg')
-        } else if (cell.classList.contains('minus-bg') && minusKey.isDown()) {
-          selectedCells.delete(cellKey)
-          cell.classList.remove('minus-bg')
-        } else {
-          const signedValue = plusKey.isDown() ? value : -value
-          selectedCells.set(cellKey, { element: cell, value: signedValue })
-
-          if (plusKey.isDown()) {
-            cell.classList.remove('minus-bg')
-            cell.classList.add('plus-bg')
-          } else {
-            cell.classList.remove('plus-bg')
-            cell.classList.add('minus-bg')
-          }
-        }
-      } else {
-        const signedValue = plusKey.isDown() ? value : -value
-        selectedCells.set(cellKey, { element: cell, value: signedValue })
-
-        if (plusKey.isDown()) {
-          cell.classList.add('plus-bg')
-        } else {
-          cell.classList.add('minus-bg')
-        }
-      }
-
-      const total =
-        Array.from(selectedCells.values()).reduce(
-          (prev, curr) => prev + curr.value * 100,
-          0
-        ) / 100
-
-      if (total === 0) {
-        totalElement.style.display = 'none'
-      } else {
-        totalElement.style.display = 'block'
-      }
-
-      const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
-      totalElement.innerText = totalFormatted
-    }
+    const cell = event.target
+    selectCell(cell)
   }
 }
 
@@ -165,4 +114,65 @@ function clearCellSelection() {
   selectedCells.clear()
   totalElement.innerText = null
   totalElement.style.display = 'none'
+}
+
+function getCellKey(cell) {
+  const tableClass = cell.parentNode?.parentNode?.parentNode?.classList[0]
+  const row = cell.closest('tr').rowIndex - 1
+  const col = cell.cellIndex
+  return `${tableClass}:${row}:${col}`
+}
+
+function selectCell(cell) {
+  const value = parseNumber(cell.innerText)
+  if (!Number.isNaN(value)) {
+    const cellKey = getCellKey(cell)
+    if (selectedCells.has(cellKey)) {
+      if (cell.classList.contains('plus-bg') && plusKey.isDown()) {
+        selectedCells.delete(cellKey)
+        cell.classList.remove('plus-bg')
+      } else if (cell.classList.contains('minus-bg') && minusKey.isDown()) {
+        selectedCells.delete(cellKey)
+        cell.classList.remove('minus-bg')
+      } else {
+        const signedValue = plusKey.isDown() ? value : -value
+        selectedCells.set(cellKey, { element: cell, value: signedValue })
+
+        if (plusKey.isDown()) {
+          cell.classList.remove('minus-bg')
+          cell.classList.add('plus-bg')
+        } else {
+          cell.classList.remove('plus-bg')
+          cell.classList.add('minus-bg')
+        }
+      }
+    } else {
+      const signedValue = plusKey.isDown() ? value : -value
+      selectedCells.set(cellKey, { element: cell, value: signedValue })
+
+      if (plusKey.isDown()) {
+        cell.classList.add('plus-bg')
+      } else {
+        cell.classList.add('minus-bg')
+      }
+    }
+
+    const total =
+      Array.from(selectedCells.values()).reduce(
+        (prev, curr) => prev + curr.value * 100,
+        0
+      ) / 100
+
+    setTotal(total)
+  }
+}
+
+function setTotal(total) {
+  if (total === 0) {
+    totalElement.style.display = 'none'
+  } else {
+    const totalFormatted = new Intl.NumberFormat('pt-BR').format(total)
+    totalElement.innerText = totalFormatted
+    totalElement.style.display = 'block'
+  }
 }
